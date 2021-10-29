@@ -20,10 +20,10 @@
   <name>edu_sharing-community-bom</name>
 
   <scm>
-    <connection>scm:git:https://scm.edu-sharing.com/edu-sharing-community/edu-sharing-community-bom.git</connection>
-    <developerConnection>scm:git:https://scm.edu-sharing.com/edu-sharing-community/edu-sharing-community-bom.git
+    <connection>scm:git:https://scm.edu-sharing.com/edu-sharing/community/edu-sharing-community-bom.git</connection>
+    <developerConnection>scm:git:https://scm.edu-sharing.com/edu-sharing/community/edu-sharing-community-bom.git
     </developerConnection>
-    <url>https://scm.edu-sharing.com/edu-sharing-community/edu-sharing-community-bom.git</url>
+    <url>https://scm.edu-sharing.com/edu-sharing/community/edu-sharing-community-bom.git</url>
   </scm>
 
   <properties>
