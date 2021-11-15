@@ -33,6 +33,7 @@
     <community.repository.plugin.logineo-idm.version>${project.version}
     </community.repository.plugin.logineo-idm.version>
     <community.repository.plugin.remote.version>${project.version}</community.repository.plugin.remote.version>
+    <community.repository.plugin.transform.version>${project.version}</community.repository.plugin.transform.version>
     <community.repository.search.elastic.version>${project.version}</community.repository.search.elastic.version>
     <community.repository.service.version>${project.version}</community.repository.service.version>
 
@@ -297,6 +298,20 @@
         <artifactId>edu_sharing-plugin-remote-repository-backend-services-module</artifactId>
         <type>amp</type>
         <version>${community.repository.plugin.remote.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-plugin-transform-repository-backend-alfresco-module</artifactId>
+        <type>amp</type>
+        <version>${community.repository.plugin.transform.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-plugin-transform-repository-backend-services-module</artifactId>
+        <type>amp</type>
+        <version>${community.repository.plugin.transform.version}</version>
       </dependency>
 
     </dependencies>
