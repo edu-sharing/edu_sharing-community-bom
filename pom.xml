@@ -30,8 +30,8 @@
 
     <community.rendering.service.version>${project.version}</community.rendering.service.version>
     <community.repository.plugin.cluster.version>${project.version}</community.repository.plugin.cluster.version>
-    <community.repository.plugin.logineo-idm.version>${project.version}
-    </community.repository.plugin.logineo-idm.version>
+    <community.repository.plugin.logineo-idm.version>${project.version}</community.repository.plugin.logineo-idm.version>
+    <community.repository.plugin.mongo.version>${project.version}</community.repository.plugin.mongo.version>
     <community.repository.plugin.remote.version>${project.version}</community.repository.plugin.remote.version>
     <community.repository.plugin.transform.version>${project.version}</community.repository.plugin.transform.version>
     <community.repository.search.elastic.version>${project.version}</community.repository.search.elastic.version>
@@ -285,6 +285,27 @@
         <type>amp</type>
         <version>${community.repository.plugin.logineo-idm.version}</version>
       </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-community-repository-plugin-mongo-backend-alfresco-module</artifactId>
+        <type>amp</type>
+        <version>${community.repository.plugin.mongo.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-community-repository-plugin-mongo-backend-services-module</artifactId>
+        <type>amp</type>
+        <version>${community.repository.plugin.mongo.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-community-repository-plugin-mongo-deploy-docker-compose</artifactId>
+        <version>${community.repository.plugin.mongo.version}</version>
+      </dependency>
+
 
       <dependency>
         <groupId>${project.groupId}</groupId>
