@@ -302,9 +302,24 @@
 
       <dependency>
         <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-community-repository-plugin-mongo-deploy-docker-build-service</artifactId>
+        <version>${community.repository.plugin.mongo.version}</version>
+        <classifier>sources</classifier>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-community-repository-plugin-mongo-config</artifactId>
+        <version>${community.repository.plugin.mongo.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-plugin-mongo-deploy-docker-compose</artifactId>
         <version>${community.repository.plugin.mongo.version}</version>
       </dependency>
+
+
 
 
       <dependency>
