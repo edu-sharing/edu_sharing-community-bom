@@ -8,7 +8,7 @@
 
   <parent>
     <groupId>org.edu_sharing</groupId>
-    <artifactId>edu_sharing-super-pom</artifactId>
+    <artifactId>edu_sharing-community-parent</artifactId>
     <version>develop-SNAPSHOT</version>
     <relativePath/>
   </parent>
@@ -28,17 +28,13 @@
 
   <properties>
 
-    <community.rendering.service.version>${project.version}</community.rendering.service.version>
-    <community.repository.plugin.cluster.version>${project.version}</community.repository.plugin.cluster.version>
-    <community.repository.plugin.logineo-idm.version>${project.version}</community.repository.plugin.logineo-idm.version>
-    <community.repository.plugin.mongo.version>${project.version}</community.repository.plugin.mongo.version>
-    <community.repository.plugin.remote.version>${project.version}</community.repository.plugin.remote.version>
-    <community.repository.plugin.transform.version>${project.version}</community.repository.plugin.transform.version>
-    <community.repository.search.elastic.version>${project.version}</community.repository.search.elastic.version>
-    <community.repository.service.version>${project.version}</community.repository.service.version>
-
-    <maven.deploy.releases>https://artifacts.edu-sharing.com/repository/community-releases/</maven.deploy.releases>
-    <maven.deploy.snapshots>https://artifacts.edu-sharing.com/repository/community-snapshots/</maven.deploy.snapshots>
+    <rendering.version>${project.version}</rendering.version>
+    <repository.plugin.cluster.version>${project.version}</repository.plugin.cluster.version>
+    <repository.plugin.mongo.version>${project.version}</repository.plugin.mongo.version>
+    <repository.plugin.remote.version>${project.version}</repository.plugin.remote.version>
+    <repository.plugin.transform.version>${project.version}</repository.plugin.transform.version>
+    <repository.search.elastic.version>${project.version}</repository.search.elastic.version>
+    <repository.version>${project.version}</repository.version>
 
   </properties>
 
@@ -49,7 +45,7 @@
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-rendering</artifactId>
-        <version>${community.rendering.service.version}</version>
+        <version>${rendering.version}</version>
         <type>tar.gz</type>
         <classifier>bin</classifier>
       </dependency>
@@ -57,7 +53,7 @@
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-rendering</artifactId>
-        <version>${community.rendering.service.version}</version>
+        <version>${rendering.version}</version>
         <type>zip</type>
         <classifier>bin</classifier>
       </dependency>
@@ -65,289 +61,285 @@
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-backend-alfresco-common</artifactId>
-        <version>${community.repository.service.version}</version>
+        <version>${repository.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-backend-alfresco-fixes</artifactId>
-        <version>${community.repository.service.version}</version>
+        <version>${repository.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-backend-alfresco-module</artifactId>
-        <version>${community.repository.service.version}</version>
+        <version>${repository.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-backend-alfresco-module</artifactId>
-        <version>${community.repository.service.version}</version>
+        <version>${repository.version}</version>
         <type>amp</type>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-backend-search-elastic-tracker</artifactId>
-        <version>${community.repository.search.elastic.version}</version>
+        <version>${repository.search.elastic.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-backend-services-common</artifactId>
-        <version>${community.repository.service.version}</version>
+        <version>${repository.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-backend-services-core</artifactId>
-        <version>${community.repository.service.version}</version>
+        <version>${repository.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-backend-services-rest-api</artifactId>
-        <version>${community.repository.service.version}</version>
+        <version>${repository.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-backend-services-rest-client</artifactId>
-        <version>${community.repository.service.version}</version>
+        <version>${repository.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-backend-services-rest-server</artifactId>
-        <version>${community.repository.service.version}</version>
+        <version>${repository.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-backend-services-rest-webapp</artifactId>
-        <version>${community.repository.service.version}</version>
+        <version>${repository.version}</version>
         <classifier>classes</classifier>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-backend-services-rest-webapp</artifactId>
-        <version>${community.repository.service.version}</version>
+        <version>${repository.version}</version>
         <type>war</type>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-backend-services-soap-api</artifactId>
-        <version>${community.repository.service.version}</version>
+        <version>${repository.version}</version>
       </dependency>
 
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-backend-services-soap-client</artifactId>
-        <version>${community.repository.service.version}</version>
+        <version>${repository.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-backend-services-soap-server</artifactId>
-        <version>${community.repository.service.version}</version>
+        <version>${repository.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-backend-services-soap-webapp</artifactId>
-        <version>${community.repository.service.version}</version>
+        <version>${repository.version}</version>
         <classifier>classes</classifier>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-backend-services-soap-webapp</artifactId>
-        <version>${community.repository.service.version}</version>
+        <version>${repository.version}</version>
         <type>war</type>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-backend-services-webapp</artifactId>
-        <version>${community.repository.service.version}</version>
+        <version>${repository.version}</version>
         <classifier>classes</classifier>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-backend-services-webapp</artifactId>
-        <version>${community.repository.service.version}</version>
+        <version>${repository.version}</version>
         <type>war</type>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-backend-services-xoai</artifactId>
-        <version>${community.repository.service.version}</version>
+        <version>${repository.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-backend-tomcat</artifactId>
-        <version>${community.repository.service.version}</version>
+        <version>${repository.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-backend-webapp</artifactId>
-        <version>${community.repository.service.version}</version>
+        <version>${repository.version}</version>
         <classifier>classes</classifier>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-backend-webapp</artifactId>
-        <version>${community.repository.service.version}</version>
+        <version>${repository.version}</version>
         <type>war</type>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-config</artifactId>
-        <version>${community.repository.service.version}</version>
+        <version>${repository.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-config</artifactId>
-        <version>${community.repository.service.version}</version>
+        <version>${repository.version}</version>
         <classifier>sources</classifier>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-frontend-webapp</artifactId>
-        <version>${community.repository.service.version}</version>
+        <version>${repository.version}</version>
         <classifier>classes</classifier>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-frontend-webapp</artifactId>
-        <version>${community.repository.service.version}</version>
+        <version>${repository.version}</version>
         <classifier>sources</classifier>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-frontend-webapp</artifactId>
-        <version>${community.repository.service.version}</version>
+        <version>${repository.version}</version>
         <type>war</type>
-      </dependency>
-
-      <dependency>
-        <groupId>${project.groupId}</groupId>
-        <artifactId>edu_sharing-community-repository-webapp</artifactId>
-        <version>${community.repository.service.version}</version>
-        <classifier>classes</classifier>
-      </dependency>
-
-      <dependency>
-        <groupId>${project.groupId}</groupId>
-        <artifactId>edu_sharing-community-repository-webapp</artifactId>
-        <version>${community.repository.service.version}</version>
-        <type>war</type>
-      </dependency>
-
-      <dependency>
-        <groupId>${project.groupId}</groupId>
-        <artifactId>edu_sharing-plugin-cluster-repository-backend-alfresco-module</artifactId>
-        <type>amp</type>
-        <version>${community.repository.plugin.cluster.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>${project.groupId}</groupId>
-        <artifactId>edu_sharing-plugin-cluster-repository-backend-services-module</artifactId>
-        <type>amp</type>
-        <version>${community.repository.plugin.cluster.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>${project.groupId}</groupId>
-        <artifactId>edu_sharing-plugin-logineo-idm-repository-backend-alfresco-module</artifactId>
-        <type>amp</type>
-        <version>${community.repository.plugin.logineo-idm.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>${project.groupId}</groupId>
-        <artifactId>edu_sharing-plugin-logineo-idm-repository-backend-services-module</artifactId>
-        <type>amp</type>
-        <version>${community.repository.plugin.logineo-idm.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-plugin-mongo-backend-alfresco-module</artifactId>
         <type>amp</type>
-        <version>${community.repository.plugin.mongo.version}</version>
+        <version>${repository.plugin.mongo.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-plugin-mongo-backend-services-module</artifactId>
         <type>amp</type>
-        <version>${community.repository.plugin.mongo.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>${project.groupId}</groupId>
-        <artifactId>edu_sharing-community-repository-plugin-mongo-deploy-docker-build-service</artifactId>
-        <version>${community.repository.plugin.mongo.version}</version>
-        <classifier>sources</classifier>
+        <version>${repository.plugin.mongo.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-plugin-mongo-config</artifactId>
-        <version>${community.repository.plugin.mongo.version}</version>
+        <version>${repository.plugin.mongo.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-community-repository-plugin-mongo-deploy-docker-build-service</artifactId>
+        <version>${repository.plugin.mongo.version}</version>
+        <classifier>sources</classifier>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-plugin-mongo-deploy-docker-compose</artifactId>
-        <version>${community.repository.plugin.mongo.version}</version>
-      </dependency>
-
-
-
-
-      <dependency>
-        <groupId>${project.groupId}</groupId>
-        <artifactId>edu_sharing-plugin-remote-repository-backend-alfresco-module</artifactId>
-        <type>amp</type>
-        <version>${community.repository.plugin.remote.version}</version>
+        <version>${repository.plugin.mongo.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
-        <artifactId>edu_sharing-plugin-remote-repository-backend-services-module</artifactId>
-        <type>amp</type>
-        <version>${community.repository.plugin.remote.version}</version>
+        <artifactId>edu_sharing-community-repository-webapp</artifactId>
+        <version>${repository.version}</version>
+        <classifier>classes</classifier>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
-        <artifactId>edu_sharing-plugin-transform-repository-backend-alfresco-module</artifactId>
-        <type>amp</type>
-        <version>${community.repository.plugin.transform.version}</version>
+        <artifactId>edu_sharing-community-repository-webapp</artifactId>
+        <version>${repository.version}</version>
+        <type>war</type>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
-        <artifactId>edu_sharing-plugin-transform-repository-backend-services-module</artifactId>
+        <artifactId>edu_sharing-enterprise-repository-plugin-cluster-backend-alfresco-module</artifactId>
         <type>amp</type>
-        <version>${community.repository.plugin.transform.version}</version>
+        <version>${repository.plugin.cluster.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-enterprise-repository-plugin-cluster-backend-services-module</artifactId>
+        <type>amp</type>
+        <version>${repository.plugin.cluster.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-enterprise-repository-plugin-remote-backend-alfresco-module</artifactId>
+        <type>amp</type>
+        <version>${repository.plugin.remote.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-enterprise-repository-plugin-remote-backend-services-module</artifactId>
+        <type>amp</type>
+        <version>${repository.plugin.remote.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-enterprise-repository-plugin-transform-backend-alfresco-module</artifactId>
+        <type>amp</type>
+        <version>${repository.plugin.transform.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-enterprise-repository-plugin-transform-backend-services-module</artifactId>
+        <type>amp</type>
+        <version>${repository.plugin.transform.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-enterprise-repository-plugin-transform-deploy-docker-build-service</artifactId>
+        <version>${repository.plugin.transform.version}</version>
+        <classifier>sources</classifier>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-enterprise-repository-plugin-transform-deploy-docker-compose</artifactId>
+        <version>${repository.plugin.transform.version}</version>
       </dependency>
 
     </dependencies>
@@ -357,21 +349,24 @@
   <repositories>
 
     <repository>
-      <id>edu-sharing.public.releases</id>
-      <url>https://artifacts.edu-sharing.com/repository/public-releases/</url>
+      <id>edusharing-remote</id>
+      <url>https://artifacts.edu-sharing.com/repository/maven-remote/</url>
       <releases>
         <enabled>true</enabled>
+        <updatePolicy>always</updatePolicy>
       </releases>
       <snapshots>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
+        <updatePolicy>always</updatePolicy>
       </snapshots>
     </repository>
 
     <repository>
-      <id>edu-sharing.public.snapshots</id>
-      <url>https://artifacts.edu-sharing.com/repository/public-snapshots/</url>
+      <id>edusharing-mirror</id>
+      <url>https://artifacts.edu-sharing.com/repository/maven-mirror/</url>
       <releases>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
+        <updatePolicy>always</updatePolicy>
       </releases>
       <snapshots>
         <enabled>true</enabled>
@@ -380,19 +375,5 @@
     </repository>
 
   </repositories>
-
-  <distributionManagement>
-
-    <repository>
-      <id>maven.deploy.releases</id>
-      <url>${maven.deploy.releases}</url>
-    </repository>
-
-    <snapshotRepository>
-      <id>maven.deploy.snapshots</id>
-      <url>${maven.deploy.snapshots}</url>
-    </snapshotRepository>
-
-  </distributionManagement>
 
 </project>
