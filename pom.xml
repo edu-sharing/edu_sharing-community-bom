@@ -379,6 +379,14 @@
         <version>${repository.plugin.transform.version}</version>
       </dependency>
 
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-enterprise-repository-plugin-transform-deploy-docker-helm-server</artifactId>
+        <version>${repository.plugin.transform.version}</version>
+        <type>tar.gz</type>
+        <classifier>bin</classifier>
+      </dependency>
+
     </dependencies>
 
   </dependencyManagement>
