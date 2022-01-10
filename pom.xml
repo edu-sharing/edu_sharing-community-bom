@@ -429,6 +429,18 @@
         <classifier>bin</classifier>
       </dependency>
 
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-enterprise-repository-plugin-transform-deploy-installer-compose-debian-bullseye</artifactId>
+        <version>${repository.plugin.elastic.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-enterprise-repository-plugin-transform-deploy-installer-repository-scripts-debian-bullseye</artifactId>
+        <version>${repository.plugin.elastic.version}</version>
+      </dependency>
+
     </dependencies>
 
   </dependencyManagement>
