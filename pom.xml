@@ -382,6 +382,12 @@
 
       <dependency>
         <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-enterprise-repository-plugin-cluster-deploy-installer-compose-debian-bullseye</artifactId>
+        <version>${repository.plugin.cluster.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-enterprise-repository-plugin-cluster-deploy-installer-repository-scripts-debian-bullseye</artifactId>
         <version>${repository.plugin.cluster.version}</version>
       </dependency>
@@ -438,13 +444,13 @@
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-enterprise-repository-plugin-transform-deploy-installer-compose-debian-bullseye</artifactId>
-        <version>${repository.plugin.elastic.version}</version>
+        <version>${repository.plugin.transform.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-enterprise-repository-plugin-transform-deploy-installer-repository-scripts-debian-bullseye</artifactId>
-        <version>${repository.plugin.elastic.version}</version>
+        <version>${repository.plugin.transform.version}</version>
       </dependency>
 
     </dependencies>
