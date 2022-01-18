@@ -264,7 +264,19 @@
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-plugin-elastic-backend-alfresco-module</artifactId>
+        <version>${repository.plugin.elastic.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-community-repository-plugin-elastic-backend-alfresco-module</artifactId>
         <type>amp</type>
+        <version>${repository.plugin.elastic.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-community-repository-plugin-elastic-backend-services-module</artifactId>
         <version>${repository.plugin.elastic.version}</version>
       </dependency>
 
@@ -325,7 +337,19 @@
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-plugin-mongo-backend-alfresco-module</artifactId>
+        <version>${repository.plugin.mongo.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-community-repository-plugin-mongo-backend-alfresco-module</artifactId>
         <type>amp</type>
+        <version>${repository.plugin.mongo.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-community-repository-plugin-mongo-backend-services-module</artifactId>
         <version>${repository.plugin.mongo.version}</version>
       </dependency>
 
@@ -372,7 +396,19 @@
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-enterprise-repository-plugin-cluster-backend-alfresco-module</artifactId>
+        <version>${repository.plugin.cluster.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-enterprise-repository-plugin-cluster-backend-alfresco-module</artifactId>
         <type>amp</type>
+        <version>${repository.plugin.cluster.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-enterprise-repository-plugin-cluster-backend-services-module</artifactId>
         <version>${repository.plugin.cluster.version}</version>
       </dependency>
 
@@ -417,7 +453,19 @@
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-enterprise-repository-plugin-remote-backend-alfresco-module</artifactId>
+        <version>${repository.plugin.remote.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-enterprise-repository-plugin-remote-backend-alfresco-module</artifactId>
         <type>amp</type>
+        <version>${repository.plugin.remote.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-enterprise-repository-plugin-remote-backend-services-module</artifactId>
         <version>${repository.plugin.remote.version}</version>
       </dependency>
 
@@ -436,8 +484,26 @@
 
       <dependency>
         <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-enterprise-repository-plugin-remote-deploy-docker-compose</artifactId>
+        <version>${repository.plugin.remote.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-enterprise-repository-plugin-transform-backend-alfresco-module</artifactId>
+        <version>${repository.plugin.transform.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-enterprise-repository-plugin-transform-backend-alfresco-module</artifactId>
         <type>amp</type>
+        <version>${repository.plugin.transform.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-enterprise-repository-plugin-transform-backend-services-module</artifactId>
         <version>${repository.plugin.transform.version}</version>
       </dependency>
 
