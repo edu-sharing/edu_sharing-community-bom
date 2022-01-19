@@ -77,31 +77,31 @@
 
       <dependency>
         <groupId>${project.groupId}</groupId>
-        <artifactId>edu_sharing-community-repository-backend-alfresco-rest-client-auth</artifactId>
+        <artifactId>edu_sharing-community-repository-backend-alfresco-rest-client-java-auth</artifactId>
         <version>${repository.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
-        <artifactId>edu_sharing-community-repository-backend-alfresco-rest-client-core</artifactId>
+        <artifactId>edu_sharing-community-repository-backend-alfresco-rest-client-java-core</artifactId>
         <version>${repository.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
-        <artifactId>edu_sharing-community-repository-backend-alfresco-rest-client-discovery</artifactId>
+        <artifactId>edu_sharing-community-repository-backend-alfresco-rest-client-java-discovery</artifactId>
         <version>${repository.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
-        <artifactId>edu_sharing-community-repository-backend-alfresco-rest-client-search</artifactId>
+        <artifactId>edu_sharing-community-repository-backend-alfresco-rest-client-java-search</artifactId>
         <version>${repository.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
-        <artifactId>edu_sharing-community-repository-backend-alfresco-rest-client-workflow</artifactId>
+        <artifactId>edu_sharing-community-repository-backend-alfresco-rest-client-java-workflow</artifactId>
         <version>${repository.version}</version>
       </dependency>
 
@@ -125,7 +125,31 @@
 
       <dependency>
         <groupId>${project.groupId}</groupId>
-        <artifactId>edu_sharing-community-repository-backend-services-rest-client</artifactId>
+        <artifactId>edu_sharing-community-repository-backend-services-rest-client-java</artifactId>
+        <version>${repository.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-community-repository-backend-services-rest-client-php</artifactId>
+        <version>${repository.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-community-repository-backend-services-rest-client-php-laravel</artifactId>
+        <version>${repository.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-community-repository-backend-services-rest-client-php-lumen</artifactId>
+        <version>${repository.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-community-repository-backend-services-rest-client-php-slim4</artifactId>
         <version>${repository.version}</version>
       </dependency>
 
@@ -158,7 +182,7 @@
 
       <dependency>
         <groupId>${project.groupId}</groupId>
-        <artifactId>edu_sharing-community-repository-backend-services-soap-client</artifactId>
+        <artifactId>edu_sharing-community-repository-backend-services-soap-client-java</artifactId>
         <version>${repository.version}</version>
       </dependency>
 
