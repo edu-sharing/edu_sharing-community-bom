@@ -581,6 +581,40 @@
         <version>${repository.plugin.transform.version}</version>
       </dependency>
 
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-enterprise-repository-plugin-transform-jodconverter-client-java</artifactId>
+        <version>${repository.plugin.transform.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-enterprise-repository-plugin-transform-jodconverter-client-php-core</artifactId>
+        <version>${repository.plugin.transform.version}</version>
+        <type>zip</type>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-enterprise-repository-plugin-transform-jodconverter-client-php-laravel</artifactId>
+        <version>${repository.plugin.transform.version}</version>
+        <type>zip</type>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-enterprise-repository-plugin-transform-jodconverter-client-php-lumen</artifactId>
+        <version>${repository.plugin.transform.version}</version>
+        <type>zip</type>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-enterprise-repository-plugin-transform-jodconverter-client-php-slim4</artifactId>
+        <version>${repository.plugin.transform.version}</version>
+        <type>zip</type>
+      </dependency>
+
     </dependencies>
 
   </dependencyManagement>
