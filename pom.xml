@@ -28,27 +28,21 @@
 
   <properties>
 
-    <rendering.version>${project.version}</rendering.version>
-    <repository.plugin.cluster.version>${project.version}</repository.plugin.cluster.version>
-    <repository.plugin.elastic.version>${project.version}</repository.plugin.elastic.version>
-    <repository.plugin.mongo.version>${project.version}</repository.plugin.mongo.version>
-    <repository.plugin.remote.version>${project.version}</repository.plugin.remote.version>
-    <repository.plugin.transform.version>${project.version}</repository.plugin.transform.version>
     <repository.version>${project.version}</repository.version>
+
+    <repository.cluster.version>${project.version}</repository.cluster.version>
+    <repository.elastic.version>${project.version}</repository.elastic.version>
+    <repository.mongo.version>${project.version}</repository.mongo.version>
+    <repository.remote.version>${project.version}</repository.remote.version>
+    <repository.transform.version>${project.version}</repository.transform.version>
+
+    <services.rendering.version>${project.version}</services.rendering.version>
 
   </properties>
 
   <dependencyManagement>
 
     <dependencies>
-
-      <dependency>
-        <groupId>${project.groupId}</groupId>
-        <artifactId>edu_sharing-community-services-rendering</artifactId>
-        <version>${rendering.version}</version>
-        <type>tar.gz</type>
-        <classifier>bin</classifier>
-      </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
@@ -292,60 +286,60 @@
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-plugin-elastic-backend-alfresco-module</artifactId>
-        <version>${repository.plugin.elastic.version}</version>
+        <version>${repository.elastic.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-plugin-elastic-backend-alfresco-module</artifactId>
         <type>amp</type>
-        <version>${repository.plugin.elastic.version}</version>
+        <version>${repository.elastic.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-plugin-elastic-backend-services-module</artifactId>
-        <version>${repository.plugin.elastic.version}</version>
+        <version>${repository.elastic.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-plugin-elastic-backend-services-module</artifactId>
         <type>amp</type>
-        <version>${repository.plugin.elastic.version}</version>
+        <version>${repository.elastic.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-plugin-elastic-config-defaults</artifactId>
-        <version>${repository.plugin.elastic.version}</version>
+        <version>${repository.elastic.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-plugin-elastic-deploy-docker-build-service</artifactId>
-        <version>${repository.plugin.elastic.version}</version>
+        <version>${repository.elastic.version}</version>
         <classifier>sources</classifier>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-plugin-elastic-deploy-docker-compose</artifactId>
-        <version>${repository.plugin.elastic.version}</version>
+        <version>${repository.elastic.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
-        <artifactId>edu_sharing-community-repository-plugin-elastic-deploy-docker-helm-elasticsearch</artifactId>
-        <version>${repository.plugin.elastic.version}</version>
+        <artifactId>edu_sharing-community-repository-plugin-elastic-deploy-docker-helm-index</artifactId>
+        <version>${repository.elastic.version}</version>
         <type>tar.gz</type>
         <classifier>bin</classifier>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
-        <artifactId>edu_sharing-community-repository-plugin-elastic-deploy-docker-helm-server</artifactId>
-        <version>${repository.plugin.elastic.version}</version>
+        <artifactId>edu_sharing-community-repository-plugin-elastic-deploy-docker-helm-tracker</artifactId>
+        <version>${repository.elastic.version}</version>
         <type>tar.gz</type>
         <classifier>bin</classifier>
       </dependency>
@@ -353,58 +347,58 @@
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-plugin-elastic-deploy-installer-compose-debian-bullseye</artifactId>
-        <version>${repository.plugin.elastic.version}</version>
+        <version>${repository.elastic.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-plugin-elastic-deploy-installer-repository-scripts-debian-bullseye</artifactId>
-        <version>${repository.plugin.elastic.version}</version>
+        <version>${repository.elastic.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-plugin-mongo-backend-alfresco-module</artifactId>
-        <version>${repository.plugin.mongo.version}</version>
+        <version>${repository.mongo.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-plugin-mongo-backend-alfresco-module</artifactId>
         <type>amp</type>
-        <version>${repository.plugin.mongo.version}</version>
+        <version>${repository.mongo.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-plugin-mongo-backend-services-module</artifactId>
-        <version>${repository.plugin.mongo.version}</version>
+        <version>${repository.mongo.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-plugin-mongo-backend-services-module</artifactId>
         <type>amp</type>
-        <version>${repository.plugin.mongo.version}</version>
+        <version>${repository.mongo.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-plugin-mongo-config-defaults</artifactId>
-        <version>${repository.plugin.mongo.version}</version>
+        <version>${repository.mongo.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-plugin-mongo-deploy-docker-build-service</artifactId>
-        <version>${repository.plugin.mongo.version}</version>
+        <version>${repository.mongo.version}</version>
         <classifier>sources</classifier>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository-plugin-mongo-deploy-docker-compose</artifactId>
-        <version>${repository.plugin.mongo.version}</version>
+        <version>${repository.mongo.version}</version>
       </dependency>
 
       <dependency>
@@ -423,148 +417,156 @@
 
       <dependency>
         <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-community-services-rendering</artifactId>
+        <version>${services.rendering.version}</version>
+        <type>tar.gz</type>
+        <classifier>bin</classifier>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-enterprise-repository-plugin-cluster-backend-alfresco-module</artifactId>
-        <version>${repository.plugin.cluster.version}</version>
+        <version>${repository.cluster.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-enterprise-repository-plugin-cluster-backend-alfresco-module</artifactId>
         <type>amp</type>
-        <version>${repository.plugin.cluster.version}</version>
+        <version>${repository.cluster.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-enterprise-repository-plugin-cluster-backend-services-module</artifactId>
-        <version>${repository.plugin.cluster.version}</version>
+        <version>${repository.cluster.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-enterprise-repository-plugin-cluster-backend-services-module</artifactId>
         <type>amp</type>
-        <version>${repository.plugin.cluster.version}</version>
+        <version>${repository.cluster.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-enterprise-repository-plugin-cluster-config-defaults</artifactId>
-        <version>${repository.plugin.cluster.version}</version>
+        <version>${repository.cluster.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-enterprise-repository-plugin-cluster-deploy-docker-build-service</artifactId>
-        <version>${repository.plugin.cluster.version}</version>
+        <version>${repository.cluster.version}</version>
         <classifier>sources</classifier>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-enterprise-repository-plugin-cluster-deploy-docker-compose</artifactId>
-        <version>${repository.plugin.cluster.version}</version>
+        <version>${repository.cluster.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-enterprise-repository-plugin-cluster-deploy-installer-compose-debian-bullseye</artifactId>
-        <version>${repository.plugin.cluster.version}</version>
+        <version>${repository.cluster.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-enterprise-repository-plugin-cluster-deploy-installer-repository-scripts-debian-bullseye</artifactId>
-        <version>${repository.plugin.cluster.version}</version>
+        <version>${repository.cluster.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-enterprise-repository-plugin-remote-backend-alfresco-module</artifactId>
-        <version>${repository.plugin.remote.version}</version>
+        <version>${repository.remote.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-enterprise-repository-plugin-remote-backend-alfresco-module</artifactId>
         <type>amp</type>
-        <version>${repository.plugin.remote.version}</version>
+        <version>${repository.remote.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-enterprise-repository-plugin-remote-backend-services-module</artifactId>
-        <version>${repository.plugin.remote.version}</version>
+        <version>${repository.remote.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-enterprise-repository-plugin-remote-backend-services-module</artifactId>
         <type>amp</type>
-        <version>${repository.plugin.remote.version}</version>
+        <version>${repository.remote.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-enterprise-repository-plugin-remote-config-defaults</artifactId>
-        <version>${repository.plugin.remote.version}</version>
+        <version>${repository.remote.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-enterprise-repository-plugin-remote-deploy-docker-compose</artifactId>
-        <version>${repository.plugin.remote.version}</version>
+        <version>${repository.remote.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-enterprise-repository-plugin-transform-backend-alfresco-module</artifactId>
-        <version>${repository.plugin.transform.version}</version>
+        <version>${repository.transform.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-enterprise-repository-plugin-transform-backend-alfresco-module</artifactId>
         <type>amp</type>
-        <version>${repository.plugin.transform.version}</version>
+        <version>${repository.transform.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-enterprise-repository-plugin-transform-backend-services-module</artifactId>
-        <version>${repository.plugin.transform.version}</version>
+        <version>${repository.transform.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-enterprise-repository-plugin-transform-backend-services-module</artifactId>
         <type>amp</type>
-        <version>${repository.plugin.transform.version}</version>
+        <version>${repository.transform.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-enterprise-repository-plugin-transform-config-defaults</artifactId>
-        <version>${repository.plugin.transform.version}</version>
+        <version>${repository.transform.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-enterprise-repository-plugin-transform-deploy-docker-build-service</artifactId>
-        <version>${repository.plugin.transform.version}</version>
+        <version>${repository.transform.version}</version>
         <classifier>sources</classifier>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-enterprise-repository-plugin-transform-deploy-docker-compose</artifactId>
-        <version>${repository.plugin.transform.version}</version>
+        <version>${repository.transform.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
-        <artifactId>edu_sharing-enterprise-repository-plugin-transform-deploy-docker-helm-server</artifactId>
-        <version>${repository.plugin.transform.version}</version>
+        <artifactId>edu_sharing-enterprise-repository-plugin-transform-deploy-docker-helm</artifactId>
+        <version>${repository.transform.version}</version>
         <type>tar.gz</type>
         <classifier>bin</classifier>
       </dependency>
@@ -572,46 +574,46 @@
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-enterprise-repository-plugin-transform-deploy-installer-compose-debian-bullseye</artifactId>
-        <version>${repository.plugin.transform.version}</version>
+        <version>${repository.transform.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-enterprise-repository-plugin-transform-deploy-installer-repository-scripts-debian-bullseye</artifactId>
-        <version>${repository.plugin.transform.version}</version>
+        <version>${repository.transform.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-enterprise-repository-plugin-transform-jodconverter-client-java</artifactId>
-        <version>${repository.plugin.transform.version}</version>
+        <version>${repository.transform.version}</version>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-enterprise-repository-plugin-transform-jodconverter-client-php-core</artifactId>
-        <version>${repository.plugin.transform.version}</version>
+        <version>${repository.transform.version}</version>
         <type>zip</type>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-enterprise-repository-plugin-transform-jodconverter-client-php-laravel</artifactId>
-        <version>${repository.plugin.transform.version}</version>
+        <version>${repository.transform.version}</version>
         <type>zip</type>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-enterprise-repository-plugin-transform-jodconverter-client-php-lumen</artifactId>
-        <version>${repository.plugin.transform.version}</version>
+        <version>${repository.transform.version}</version>
         <type>zip</type>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-enterprise-repository-plugin-transform-jodconverter-client-php-slim4</artifactId>
-        <version>${repository.plugin.transform.version}</version>
+        <version>${repository.transform.version}</version>
         <type>zip</type>
       </dependency>
 
