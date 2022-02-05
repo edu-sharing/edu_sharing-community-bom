@@ -28,15 +28,8 @@
 
   <properties>
 
-    <repository.version>${project.version}</repository.version>
-
-    <repository-cluster.version>${project.version}</repository-cluster.version>
-    <repository-elastic.version>${project.version}</repository-elastic.version>
-    <repository-mongo.version>${project.version}</repository-mongo.version>
-    <repository-remote.version>${project.version}</repository-remote.version>
-    <repository-transform.version>${project.version}</repository-transform.version>
-
-    <services-rendering.version>${project.version}</services-rendering.version>
+    <bom.repository.version>${project.version}</bom.repository.version>
+    <bom.services-rendering.version>${project.version}</bom.services-rendering.version>
 
   </properties>
 
@@ -47,23 +40,7 @@
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-repository</artifactId>
-        <version>${repository.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-
-      <dependency>
-        <groupId>${project.groupId}</groupId>
-        <artifactId>edu_sharing-community-repository-plugin-elastic</artifactId>
-        <version>${repository-elastic.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-
-      <dependency>
-        <groupId>${project.groupId}</groupId>
-        <artifactId>edu_sharing-community-repository-plugin-mongo</artifactId>
-        <version>${repository-mongo.version}</version>
+        <version>${bom.repository.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -71,31 +48,7 @@
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>edu_sharing-community-services-rendering</artifactId>
-        <version>${services-rendering.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-
-      <dependency>
-        <groupId>${project.groupId}</groupId>
-        <artifactId>edu_sharing-enterprise-repository-plugin-cluster</artifactId>
-        <version>${repository-cluster.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-
-      <dependency>
-        <groupId>${project.groupId}</groupId>
-        <artifactId>edu_sharing-enterprise-repository-plugin-remote</artifactId>
-        <version>${repository-remote.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-
-      <dependency>
-        <groupId>${project.groupId}</groupId>
-        <artifactId>edu_sharing-enterprise-repository-plugin-transform</artifactId>
-        <version>${repository-transform.version}</version>
+        <version>${bom.services-rendering.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -103,6 +56,160 @@
     </dependencies>
 
   </dependencyManagement>
+
+  <profiles>
+
+    <profile>
+
+      <id>repository.cluster</id>
+
+      <activation>
+        <activeByDefault>false</activeByDefault>
+        <property>
+          <name>env.REPOSITORY_CLUSTER_ENABLED</name>
+          <value>true</value>
+        </property>
+      </activation>
+
+      <properties>
+        <bom.repository-cluster.version>${project.version}</bom.repository-cluster.version>
+      </properties>
+
+      <dependencyManagement>
+        <dependencies>
+          <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>edu_sharing-enterprise-repository-plugin-cluster</artifactId>
+            <version>${bom.repository-cluster.version}</version>
+            <type>pom</type>
+            <scope>import</scope>
+          </dependency>
+        </dependencies>
+      </dependencyManagement>
+
+    </profile>
+
+    <profile>
+
+      <id>repository.elastic</id>
+
+      <activation>
+        <activeByDefault>false</activeByDefault>
+        <property>
+          <name>env.REPOSITORY_ELASTIC_ENABLED</name>
+          <value>true</value>
+        </property>
+      </activation>
+
+      <properties>
+        <bom.repository-elastic.version>${project.version}</bom.repository-elastic.version>
+      </properties>
+
+      <dependencyManagement>
+        <dependencies>
+          <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>edu_sharing-community-repository-plugin-elastic</artifactId>
+            <version>${bom.repository-elastic.version}</version>
+            <type>pom</type>
+            <scope>import</scope>
+          </dependency>
+        </dependencies>
+      </dependencyManagement>
+
+    </profile>
+
+    <profile>
+
+      <id>repository.mongo</id>
+
+      <activation>
+        <activeByDefault>false</activeByDefault>
+        <property>
+          <name>env.REPOSITORY_MONGO_ENABLED</name>
+          <value>true</value>
+        </property>
+      </activation>
+
+      <properties>
+        <bom.repository-mongo.version>${project.version}</bom.repository-mongo.version>
+      </properties>
+
+      <dependencyManagement>
+        <dependencies>
+          <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>edu_sharing-community-repository-plugin-mongo</artifactId>
+            <version>${bom.repository-mongo.version}</version>
+            <type>pom</type>
+            <scope>import</scope>
+          </dependency>
+        </dependencies>
+      </dependencyManagement>
+
+    </profile>
+
+    <profile>
+
+      <id>repository.remote</id>
+
+      <activation>
+        <activeByDefault>false</activeByDefault>
+        <property>
+          <name>env.REPOSITORY_REMOTE_ENABLED</name>
+          <value>true</value>
+        </property>
+      </activation>
+
+      <properties>
+        <bom.repository-remote.version>${project.version}</bom.repository-remote.version>
+      </properties>
+
+      <dependencyManagement>
+        <dependencies>
+          <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>edu_sharing-enterprise-repository-plugin-remote</artifactId>
+            <version>${bom.repository-remote.version}</version>
+            <type>pom</type>
+            <scope>import</scope>
+          </dependency>
+        </dependencies>
+      </dependencyManagement>
+
+    </profile>
+
+    <profile>
+
+      <id>repository.transform</id>
+
+      <activation>
+        <activeByDefault>false</activeByDefault>
+        <property>
+          <name>env.REPOSITORY_TRANSFORM_ENABLED</name>
+          <value>true</value>
+        </property>
+      </activation>
+
+      <properties>
+        <bom.repository-transform.version>${project.version}</bom.repository-transform.version>
+      </properties>
+
+      <dependencyManagement>
+        <dependencies>
+          <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>edu_sharing-enterprise-repository-plugin-transform</artifactId>
+            <version>${bom.repository-transform.version}</version>
+            <type>pom</type>
+            <scope>import</scope>
+          </dependency>
+        </dependencies>
+      </dependencyManagement>
+
+    </profile>
+
+  </profiles>
 
   <repositories>
 
