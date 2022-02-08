@@ -28,6 +28,7 @@
 
   <properties>
 
+    <!-- release-3 -->
     <bom.repository.version>${project.version}</bom.repository.version>
     <bom.services-rendering.version>${project.version}</bom.services-rendering.version>
 
@@ -72,6 +73,7 @@
       </activation>
 
       <properties>
+        <!-- release-3 -->
         <bom.repository-cluster.version>${project.version}</bom.repository-cluster.version>
       </properties>
 
@@ -102,6 +104,7 @@
       </activation>
 
       <properties>
+        <!-- release-3 -->
         <bom.repository-elastic.version>${project.version}</bom.repository-elastic.version>
       </properties>
 
@@ -132,6 +135,7 @@
       </activation>
 
       <properties>
+        <!-- release-3 -->
         <bom.repository-mongo.version>${project.version}</bom.repository-mongo.version>
       </properties>
 
@@ -162,6 +166,7 @@
       </activation>
 
       <properties>
+        <!-- release-3 -->
         <bom.repository-remote.version>${project.version}</bom.repository-remote.version>
       </properties>
 
@@ -192,6 +197,7 @@
       </activation>
 
       <properties>
+        <!-- release-3 -->
         <bom.repository-transform.version>${project.version}</bom.repository-transform.version>
       </properties>
 
@@ -206,6 +212,30 @@
           </dependency>
         </dependencies>
       </dependencyManagement>
+
+    </profile>
+
+    <profile>
+
+      <id>dev</id>
+
+      <activation>
+        <activeByDefault>false</activeByDefault>
+        <property>
+          <name>env.DEV</name>
+          <value>true</value>
+        </property>
+      </activation>
+
+      <properties>
+        <bom.repository.version>${project.version}</bom.repository.version>
+        <bom.repository-cluster.version>${project.version}</bom.repository-cluster.version>
+        <bom.repository-elastic.version>${project.version}</bom.repository-elastic.version>
+        <bom.repository-mongo.version>${project.version}</bom.repository-mongo.version>
+        <bom.repository-remote.version>${project.version}</bom.repository-remote.version>
+        <bom.repository-transform.version>${project.version}</bom.repository-transform.version>
+        <bom.services-rendering.version>${project.version}</bom.services-rendering.version>
+      </properties>
 
     </profile>
 
