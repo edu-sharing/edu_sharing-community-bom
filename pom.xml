@@ -30,6 +30,11 @@
 
     <!-- release-3 -->
     <bom.repository.version>${project.version}</bom.repository.version>
+    <bom.repository-cluster.version>${project.version}</bom.repository-cluster.version>
+    <bom.repository-elastic.version>${project.version}</bom.repository-elastic.version>
+    <bom.repository-mongo.version>${project.version}</bom.repository-mongo.version>
+    <bom.repository-remote.version>${project.version}</bom.repository-remote.version>
+    <bom.repository-transform.version>${project.version}</bom.repository-transform.version>
     <bom.services-rendering.version>${project.version}</bom.services-rendering.version>
 
     <php.version.major>7</php.version.major>
@@ -83,11 +88,6 @@
         </property>
       </activation>
 
-      <properties>
-        <!-- release-3 -->
-        <bom.repository-cluster.version>${project.version}</bom.repository-cluster.version>
-      </properties>
-
       <dependencyManagement>
         <dependencies>
           <dependency>
@@ -113,11 +113,6 @@
           <value>true</value>
         </property>
       </activation>
-
-      <properties>
-        <!-- release-3 -->
-        <bom.repository-elastic.version>${project.version}</bom.repository-elastic.version>
-      </properties>
 
       <dependencyManagement>
         <dependencies>
@@ -145,11 +140,6 @@
         </property>
       </activation>
 
-      <properties>
-        <!-- release-3 -->
-        <bom.repository-mongo.version>${project.version}</bom.repository-mongo.version>
-      </properties>
-
       <dependencyManagement>
         <dependencies>
           <dependency>
@@ -176,11 +166,6 @@
         </property>
       </activation>
 
-      <properties>
-        <!-- release-3 -->
-        <bom.repository-remote.version>${project.version}</bom.repository-remote.version>
-      </properties>
-
       <dependencyManagement>
         <dependencies>
           <dependency>
@@ -206,11 +191,6 @@
           <value>true</value>
         </property>
       </activation>
-
-      <properties>
-        <!-- release-3 -->
-        <bom.repository-transform.version>${project.version}</bom.repository-transform.version>
-      </properties>
 
       <dependencyManagement>
         <dependencies>
