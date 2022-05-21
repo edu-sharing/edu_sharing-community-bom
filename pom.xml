@@ -29,13 +29,13 @@
   <properties>
 
     <!-- release-3 -->
-    <bom.repository.version>7.0.0-RC9</bom.repository.version>
-    <bom.repository-cluster.version>7.0.0-RC5</bom.repository-cluster.version>
-    <bom.repository-elastic.version>7.0.0-RC8</bom.repository-elastic.version>
-    <bom.repository-mongo.version>7.0.0-RC6</bom.repository-mongo.version>
-    <bom.repository-remote.version>7.0.0-RC5</bom.repository-remote.version>
-    <bom.repository-transform.version>7.0.0-RC8</bom.repository-transform.version>
-    <bom.services-rendering.version>7.0.0-RC8</bom.services-rendering.version>
+    <bom.repository.version>7.0.0-RC10</bom.repository.version>
+    <bom.repository-cluster.version>7.0.0-RC6</bom.repository-cluster.version>
+    <bom.repository-elastic.version>7.0.0-RC9</bom.repository-elastic.version>
+    <bom.repository-mongo.version>7.0.0-RC7</bom.repository-mongo.version>
+    <bom.repository-remote.version>7.0.0-RC6</bom.repository-remote.version>
+    <bom.repository-transform.version>7.0.0-RC9</bom.repository-transform.version>
+    <bom.services-rendering.version>7.0.0-RC9</bom.services-rendering.version>
 
   </properties>
 
