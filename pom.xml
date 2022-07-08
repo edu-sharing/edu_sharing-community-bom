@@ -27,7 +27,7 @@
 
     <!-- release-3 -->
     <bom.repository.version>8.0.0-RC0</bom.repository.version>
-    <bom.repository-cluster.version>${project.version}</bom.repository-cluster.version>
+    <bom.repository-cluster.version>8.0.0-RC0</bom.repository-cluster.version>
     <bom.repository-elastic.version>${project.version}</bom.repository-elastic.version>
     <bom.repository-mongo.version>${project.version}</bom.repository-mongo.version>
     <bom.repository-remote.version>${project.version}</bom.repository-remote.version>
