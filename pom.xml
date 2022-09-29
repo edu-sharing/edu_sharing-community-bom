@@ -26,7 +26,7 @@
   <properties>
 
     <!-- release-3 -->
-    <bom.repository.version>7.0.0-RC24</bom.repository.version>
+    <bom.repository.version>7.0.0-RC25</bom.repository.version>
     <bom.repository-antivirus.version>7.0.0-RC1</bom.repository-antivirus.version>
     <bom.repository-cluster.version>7.0.0-RC19</bom.repository-cluster.version>
     <bom.repository-elastic.version>7.0.0-RC24</bom.repository-elastic.version>
