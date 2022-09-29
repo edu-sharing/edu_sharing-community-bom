@@ -31,7 +31,7 @@
     <bom.repository-cluster.version>7.0.0-RC19</bom.repository-cluster.version>
     <bom.repository-elastic.version>7.0.0-RC24</bom.repository-elastic.version>
     <bom.repository-mongo.version>7.0.0-RC22</bom.repository-mongo.version>
-    <bom.repository-remote.version>7.0.0-RC18</bom.repository-remote.version>
+    <bom.repository-remote.version>7.0.0-RC19</bom.repository-remote.version>
     <bom.repository-transform.version>7.0.0-RC22</bom.repository-transform.version>
     <bom.services-rendering.version>7.0.0-RC22</bom.services-rendering.version>
 
