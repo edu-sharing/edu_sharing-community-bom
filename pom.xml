@@ -30,6 +30,7 @@
 
     <!-- release-3 -->
     <bom.repository.version>${project.version}</bom.repository.version>
+    <bom.repository-antivirus.version>${project.version}</bom.repository-antivirus.version>
     <bom.repository-cluster.version>${project.version}</bom.repository-cluster.version>
     <bom.repository-elastic.version>${project.version}</bom.repository-elastic.version>
     <bom.repository-mongo.version>${project.version}</bom.repository-mongo.version>
@@ -64,6 +65,32 @@
   </dependencyManagement>
 
   <profiles>
+
+    <profile>
+
+      <id>repository.antivirus</id>
+
+      <activation>
+        <activeByDefault>false</activeByDefault>
+        <property>
+          <name>env.REPOSITORY_ANTIVIRUS_ENABLED</name>
+          <value>true</value>
+        </property>
+      </activation>
+
+      <dependencyManagement>
+        <dependencies>
+          <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>edu_sharing-enterprise-repository-plugin-antivirus</artifactId>
+            <version>${bom.repository-antivirus.version}</version>
+            <type>pom</type>
+            <scope>import</scope>
+          </dependency>
+        </dependencies>
+      </dependencyManagement>
+
+    </profile>
 
     <profile>
 
@@ -209,6 +236,7 @@
 
       <properties>
         <bom.repository.version>${project.version}</bom.repository.version>
+        <bom.repository-antivirus.version>${project.version}</bom.repository-antivirus.version>
         <bom.repository-cluster.version>${project.version}</bom.repository-cluster.version>
         <bom.repository-elastic.version>${project.version}</bom.repository-elastic.version>
         <bom.repository-mongo.version>${project.version}</bom.repository-mongo.version>
