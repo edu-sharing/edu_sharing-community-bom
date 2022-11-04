@@ -33,7 +33,7 @@
     <bom.repository-mongo.version>7.0.0-RC32</bom.repository-mongo.version>
     <bom.repository-remote.version>7.0.0-RC30</bom.repository-remote.version>
     <bom.repository-transform.version>7.0.0-RC33</bom.repository-transform.version>
-    <bom.services-rendering.version>7.0.0-RC35</bom.services-rendering.version>
+    <bom.services-rendering.version>7.0.0-RC36</bom.services-rendering.version>
 
   </properties>
 
