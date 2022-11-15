@@ -27,7 +27,7 @@
 
     <!-- release-3 -->
     <bom.repository.version>7.0.0-RC41</bom.repository.version>
-    <bom.repository-antivirus.version>7.0.0-RC20</bom.repository-antivirus.version>
+    <bom.repository-antivirus.version>7.0.0-RC21</bom.repository-antivirus.version>
     <bom.repository-cluster.version>7.0.0-RC33</bom.repository-cluster.version>
     <bom.repository-elastic.version>7.0.0-RC43</bom.repository-elastic.version>
     <bom.repository-mongo.version>7.0.0-RC36</bom.repository-mongo.version>
