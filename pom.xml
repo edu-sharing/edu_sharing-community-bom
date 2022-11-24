@@ -32,7 +32,7 @@
     <bom.repository-elastic.version>7.0.0-RC47</bom.repository-elastic.version>
     <bom.repository-mongo.version>7.0.0-RC40</bom.repository-mongo.version>
     <bom.repository-remote.version>7.0.0-RC38</bom.repository-remote.version>
-    <bom.repository-transform.version>7.0.0-RC40</bom.repository-transform.version>
+    <bom.repository-transform.version>7.0.0-RC41</bom.repository-transform.version>
     <bom.services-rendering.version>7.0.0-RC43</bom.services-rendering.version>
 
   </properties>
