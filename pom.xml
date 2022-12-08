@@ -29,7 +29,7 @@
     <bom.repository.version>8.0.0-RC17</bom.repository.version>
     <bom.repository-antivirus.version>8.0.0-RC8</bom.repository-antivirus.version>
     <bom.repository-cluster.version>8.0.0-RC7</bom.repository-cluster.version>
-    <bom.repository-elastic.version>8.0.0-RC16</bom.repository-elastic.version>
+    <bom.repository-elastic.version>8.0.0-RC17</bom.repository-elastic.version>
     <bom.repository-mongo.version>8.0.0-RC15</bom.repository-mongo.version>
     <bom.repository-remote.version>8.0.0-RC13</bom.repository-remote.version>
     <bom.repository-transform.version>8.0.0-RC7</bom.repository-transform.version>
