@@ -27,7 +27,7 @@
 
     <!-- release-3 -->
     <bom.repository.version>8.0.0-RC19</bom.repository.version>
-    <bom.repository-antivirus.version>8.0.0-RC9</bom.repository-antivirus.version>
+    <bom.repository-antivirus.version>8.0.0-RC10</bom.repository-antivirus.version>
     <bom.repository-cluster.version>8.0.0-RC8</bom.repository-cluster.version>
     <bom.repository-elastic.version>8.0.0-RC18</bom.repository-elastic.version>
     <bom.repository-mongo.version>8.0.0-RC18</bom.repository-mongo.version>
