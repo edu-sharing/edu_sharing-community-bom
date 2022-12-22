@@ -32,7 +32,7 @@
     <bom.repository-elastic.version>8.0.0-RC20</bom.repository-elastic.version>
     <bom.repository-mongo.version>8.0.0-RC20</bom.repository-mongo.version>
     <bom.repository-remote.version>8.0.0-RC17</bom.repository-remote.version>
-    <bom.repository-transform.version>8.0.0-RC9</bom.repository-transform.version>
+    <bom.repository-transform.version>8.0.0-RC10</bom.repository-transform.version>
     <bom.services-rendering.version>8.0.0-RC17</bom.services-rendering.version>
 
   </properties>
