@@ -31,7 +31,7 @@
     <bom.repository-cluster.version>8.1.0-RC5</bom.repository-cluster.version>
     <bom.repository-elastic.version>8.1.0-RC5</bom.repository-elastic.version>
     <bom.repository-mongo.version>8.1.0-RC4</bom.repository-mongo.version>
-    <bom.repository-remote.version>8.1.0-RC4</bom.repository-remote.version>
+    <bom.repository-remote.version>8.1.0-RC5</bom.repository-remote.version>
     <bom.repository-transform.version>8.1.0-RC4</bom.repository-transform.version>
     <bom.services-rendering.version>8.1.0-RC5</bom.services-rendering.version>
 
