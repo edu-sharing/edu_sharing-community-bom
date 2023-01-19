@@ -145,7 +145,6 @@
     </profile>
 
     <profile>
-
       <id>repository.mongo</id>
 
       <activation>
