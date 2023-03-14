@@ -38,6 +38,7 @@
     <bom.repository-remote.version>${project.version}</bom.repository-remote.version>
     <bom.repository-transform.version>${project.version}</bom.repository-transform.version>
     <bom.services-rendering.version>${project.version}</bom.services-rendering.version>
+    <bom.services-connector.version>${project.version}</bom.services-connector.version>
 
   </properties>
 
@@ -249,6 +250,32 @@
 
     <profile>
 
+      <id>service.connector</id>
+
+      <activation>
+        <activeByDefault>false</activeByDefault>
+        <property>
+          <name>env.SERVICE_CONNECTOR_ENABLED</name>
+          <value>true</value>
+        </property>
+      </activation>
+
+      <dependencyManagement>
+        <dependencies>
+          <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>edu_sharing-community-services-connector</artifactId>
+            <version>${bom.services-connector.version}</version>
+            <type>pom</type>
+            <scope>import</scope>
+          </dependency>
+        </dependencies>
+      </dependencyManagement>
+
+    </profile>
+
+    <profile>
+
       <id>dev</id>
 
       <activation>
@@ -269,6 +296,7 @@
         <bom.repository-remote.version>${project.version}</bom.repository-remote.version>
         <bom.repository-transform.version>${project.version}</bom.repository-transform.version>
         <bom.services-rendering.version>${project.version}</bom.services-rendering.version>
+        <bom.services-connector.version>${project.version}</bom.services-connector.version>
       </properties>
 
     </profile>
