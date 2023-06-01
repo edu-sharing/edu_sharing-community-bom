@@ -61,6 +61,62 @@
         <scope>import</scope>
       </dependency>
 
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-enterprise-repository-plugin-antivirus</artifactId>
+        <version>${bom.repository-antivirus.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-enterprise-repository-plugin-cluster</artifactId>
+        <version>${bom.repository-cluster.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-community-repository-plugin-elastic</artifactId>
+        <version>${bom.repository-elastic.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-community-repository-plugin-mongo</artifactId>
+        <version>${bom.repository-mongo.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-enterprise-repository-plugin-remote</artifactId>
+        <version>${bom.repository-remote.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-enterprise-repository-plugin-transform</artifactId>
+        <version>${bom.repository-transform.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>edu_sharing-community-services-connector</artifactId>
+        <version>${bom.services-connector.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
     </dependencies>
 
   </dependencyManagement>
@@ -68,188 +124,7 @@
   <profiles>
 
     <profile>
-
-      <id>repository.antivirus</id>
-
-      <activation>
-        <activeByDefault>false</activeByDefault>
-        <property>
-          <name>env.REPOSITORY_ANTIVIRUS_ENABLED</name>
-          <value>true</value>
-        </property>
-      </activation>
-
-      <dependencyManagement>
-        <dependencies>
-          <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>edu_sharing-enterprise-repository-plugin-antivirus</artifactId>
-            <version>${bom.repository-antivirus.version}</version>
-            <type>pom</type>
-            <scope>import</scope>
-          </dependency>
-        </dependencies>
-      </dependencyManagement>
-
-    </profile>
-
-    <profile>
-
-      <id>repository.cluster</id>
-
-      <activation>
-        <activeByDefault>false</activeByDefault>
-        <property>
-          <name>env.REPOSITORY_CLUSTER_ENABLED</name>
-          <value>true</value>
-        </property>
-      </activation>
-
-      <dependencyManagement>
-        <dependencies>
-          <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>edu_sharing-enterprise-repository-plugin-cluster</artifactId>
-            <version>${bom.repository-cluster.version}</version>
-            <type>pom</type>
-            <scope>import</scope>
-          </dependency>
-        </dependencies>
-      </dependencyManagement>
-
-    </profile>
-
-    <profile>
-
-      <id>repository.elastic</id>
-
-      <activation>
-        <activeByDefault>false</activeByDefault>
-        <property>
-          <name>env.REPOSITORY_ELASTIC_ENABLED</name>
-          <value>true</value>
-        </property>
-      </activation>
-
-      <dependencyManagement>
-        <dependencies>
-          <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>edu_sharing-community-repository-plugin-elastic</artifactId>
-            <version>${bom.repository-elastic.version}</version>
-            <type>pom</type>
-            <scope>import</scope>
-          </dependency>
-        </dependencies>
-      </dependencyManagement>
-
-    </profile>
-
-    <profile>
-      <id>repository.mongo</id>
-
-      <activation>
-        <activeByDefault>false</activeByDefault>
-        <property>
-          <name>env.REPOSITORY_MONGO_ENABLED</name>
-          <value>true</value>
-        </property>
-      </activation>
-
-      <dependencyManagement>
-        <dependencies>
-          <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>edu_sharing-community-repository-plugin-mongo</artifactId>
-            <version>${bom.repository-mongo.version}</version>
-            <type>pom</type>
-            <scope>import</scope>
-          </dependency>
-        </dependencies>
-      </dependencyManagement>
-
-    </profile>
-
-    <profile>
-
-      <id>repository.remote</id>
-
-      <activation>
-        <activeByDefault>false</activeByDefault>
-        <property>
-          <name>env.REPOSITORY_REMOTE_ENABLED</name>
-          <value>true</value>
-        </property>
-      </activation>
-
-      <dependencyManagement>
-        <dependencies>
-          <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>edu_sharing-enterprise-repository-plugin-remote</artifactId>
-            <version>${bom.repository-remote.version}</version>
-            <type>pom</type>
-            <scope>import</scope>
-          </dependency>
-        </dependencies>
-      </dependencyManagement>
-
-    </profile>
-
-    <profile>
-
-      <id>repository.transform</id>
-
-      <activation>
-        <activeByDefault>false</activeByDefault>
-        <property>
-          <name>env.REPOSITORY_TRANSFORM_ENABLED</name>
-          <value>true</value>
-        </property>
-      </activation>
-
-      <dependencyManagement>
-        <dependencies>
-          <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>edu_sharing-enterprise-repository-plugin-transform</artifactId>
-            <version>${bom.repository-transform.version}</version>
-            <type>pom</type>
-            <scope>import</scope>
-          </dependency>
-        </dependencies>
-      </dependencyManagement>
-
-    </profile>
-
-    <profile>
-
-      <id>service.connector</id>
-
-      <activation>
-        <activeByDefault>false</activeByDefault>
-        <property>
-          <name>env.SERVICE_CONNECTOR_ENABLED</name>
-          <value>true</value>
-        </property>
-      </activation>
-
-      <dependencyManagement>
-        <dependencies>
-          <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>edu_sharing-community-services-connector</artifactId>
-            <version>${bom.services-connector.version}</version>
-            <type>pom</type>
-            <scope>import</scope>
-          </dependency>
-        </dependencies>
-      </dependencyManagement>
-
-    </profile>
-
-    <profile>
-
+      <!-- this won't work with 'mvn install -P dev' on deploy project (that's how intellij used profiles) -->
       <id>dev</id>
 
       <activation>
@@ -271,7 +146,6 @@
         <bom.services-rendering.version>${project.version}</bom.services-rendering.version>
         <bom.services-connector.version>${project.version}</bom.services-connector.version>
       </properties>
-
     </profile>
 
   </profiles>
