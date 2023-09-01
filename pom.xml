@@ -29,12 +29,12 @@
     <bom.repository.version>8.1.0-RC37</bom.repository.version>
     <bom.repository-antivirus.version>8.1.0-RC35</bom.repository-antivirus.version>
     <bom.repository-cluster.version>8.1.0-RC35</bom.repository-cluster.version>
-    <bom.repository-elastic.version>8.1.0-RC39</bom.repository-elastic.version>
+    <bom.repository-elastic.version>8.1.0-RC40</bom.repository-elastic.version>
     <bom.repository-mongo.version>8.1.0-RC33</bom.repository-mongo.version>
     <bom.repository-remote.version>8.1.0-RC35</bom.repository-remote.version>
     <bom.repository-transform.version>8.1.0-RC36</bom.repository-transform.version>
-    <bom.services-rendering.version>8.1.0-RC37</bom.services-rendering.version>
-    <bom.services-connector.version>8.1.0-RC0</bom.services-connector.version>
+    <bom.services-rendering.version>8.1.0-RC38</bom.services-rendering.version>
+    <bom.services-connector.version>8.1.0-RC1</bom.services-connector.version>
 
   </properties>
 
