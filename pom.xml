@@ -34,7 +34,7 @@
     <bom.repository-remote.version>8.0.6-RC9</bom.repository-remote.version>
     <bom.repository-transform.version>8.0.6-RC10</bom.repository-transform.version>
     <bom.services-rendering.version>8.0.6-RC10</bom.services-rendering.version>
-    <bom.services-connector.version>8.0.2-RC4</bom.services-connector.version>
+    <bom.services-connector.version>8.0.2-RC5</bom.services-connector.version>
 
   </properties>
 
