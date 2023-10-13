@@ -28,7 +28,7 @@
     <!-- release-3 -->
     <bom.repository.version>8.1.0-RC46</bom.repository.version>
     <bom.repository-antivirus.version>8.1.0-RC44</bom.repository-antivirus.version>
-    <bom.repository-cluster.version>8.1.0-RC45</bom.repository-cluster.version>
+    <bom.repository-cluster.version>8.1.0-RC46</bom.repository-cluster.version>
     <bom.repository-elastic.version>8.1.0-RC51</bom.repository-elastic.version>
     <bom.repository-mongo.version>8.1.0-RC43</bom.repository-mongo.version>
     <bom.repository-remote.version>8.1.0-RC44</bom.repository-remote.version>
