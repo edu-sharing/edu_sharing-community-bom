@@ -33,7 +33,7 @@
     <bom.repository-remote.version>7.0.2-RC2</bom.repository-remote.version>
     <bom.repository-transform.version>7.0.2-RC2</bom.repository-transform.version>
     <bom.services-rendering.version>7.0.2-RC2</bom.services-rendering.version>
-    <bom.services-connector.version>7.0.2-RC1</bom.services-connector.version>
+    <bom.services-connector.version>7.0.2-RC2</bom.services-connector.version>
 
   </properties>
 
