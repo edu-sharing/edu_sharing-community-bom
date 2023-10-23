@@ -26,15 +26,15 @@
   <properties>
 
     <!-- release-3 -->
-    <bom.repository.version>8.1.0-RC48</bom.repository.version>
-    <bom.repository-antivirus.version>8.1.0-RC46</bom.repository-antivirus.version>
-    <bom.repository-cluster.version>8.1.0-RC48</bom.repository-cluster.version>
-    <bom.repository-elastic.version>8.1.0-RC53</bom.repository-elastic.version>
-    <bom.repository-mongo.version>8.1.0-RC45</bom.repository-mongo.version>
-    <bom.repository-remote.version>8.1.0-RC46</bom.repository-remote.version>
-    <bom.repository-transform.version>8.1.0-RC47</bom.repository-transform.version>
-    <bom.services-rendering.version>8.1.0-RC50</bom.services-rendering.version>
-    <bom.services-connector.version>8.1.0-RC6</bom.services-connector.version>
+    <bom.repository.version>8.1.0-RC49</bom.repository.version>
+    <bom.repository-antivirus.version>8.1.0-RC47</bom.repository-antivirus.version>
+    <bom.repository-cluster.version>8.1.0-RC49</bom.repository-cluster.version>
+    <bom.repository-elastic.version>8.1.0-RC54</bom.repository-elastic.version>
+    <bom.repository-mongo.version>8.1.0-RC46</bom.repository-mongo.version>
+    <bom.repository-remote.version>8.1.0-RC47</bom.repository-remote.version>
+    <bom.repository-transform.version>8.1.0-RC48</bom.repository-transform.version>
+    <bom.services-rendering.version>8.1.0-RC51</bom.services-rendering.version>
+    <bom.services-connector.version>8.1.0-RC7</bom.services-connector.version>
 
   </properties>
 
