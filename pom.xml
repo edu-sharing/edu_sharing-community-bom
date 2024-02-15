@@ -34,7 +34,7 @@
     <bom.repository-remote.version>8.1.1-RC17</bom.repository-remote.version>
     <bom.repository-transform.version>8.1.1-RC17</bom.repository-transform.version>
     <bom.services-rendering.version>8.1.1-RC17</bom.services-rendering.version>
-    <bom.services-connector.version>8.1.1-RC7</bom.services-connector.version>
+    <bom.services-connector.version>8.1.1-RC8</bom.services-connector.version>
 
   </properties>
 
