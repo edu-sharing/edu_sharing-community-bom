@@ -33,7 +33,7 @@
     <bom.repository-mongo.version>8.1.1-RC27</bom.repository-mongo.version>
     <bom.repository-remote.version>8.1.1-RC27</bom.repository-remote.version>
     <bom.repository-transform.version>8.1.1-RC27</bom.repository-transform.version>
-    <bom.services-rendering.version>8.1.1-RC27</bom.services-rendering.version>
+    <bom.services-rendering.version>8.1.1-RC28</bom.services-rendering.version>
     <bom.services-connector.version>8.1.1-RC11</bom.services-connector.version>
 
   </properties>
