@@ -26,15 +26,15 @@
   <properties>
 
     <!-- release-3 -->
-    <bom.repository.version>9.1.0-RC21</bom.repository.version>
-    <bom.repository-antivirus.version>9.1.0-RC20</bom.repository-antivirus.version>
-    <bom.repository-cluster.version>9.1.0-RC20</bom.repository-cluster.version>
-    <bom.repository-elastic.version>9.1.0-RC19</bom.repository-elastic.version>
-    <bom.repository-mongo.version>9.1.0-RC20</bom.repository-mongo.version>
-    <bom.repository-kafka.version>9.1.0-RC20</bom.repository-kafka.version>
-    <bom.repository-remote.version>9.1.0-RC20</bom.repository-remote.version>
-    <bom.repository-transform.version>9.1.0-RC20</bom.repository-transform.version>
-    <bom.services-rendering.version>9.1.0-RC21</bom.services-rendering.version>
+    <bom.repository.version>9.1.0-RC22</bom.repository.version>
+    <bom.repository-antivirus.version>9.1.0-RC21</bom.repository-antivirus.version>
+    <bom.repository-cluster.version>9.1.0-RC21</bom.repository-cluster.version>
+    <bom.repository-elastic.version>9.1.0-RC20</bom.repository-elastic.version>
+    <bom.repository-mongo.version>9.1.0-RC21</bom.repository-mongo.version>
+    <bom.repository-kafka.version>9.1.0-RC21</bom.repository-kafka.version>
+    <bom.repository-remote.version>9.1.0-RC21</bom.repository-remote.version>
+    <bom.repository-transform.version>9.1.0-RC21</bom.repository-transform.version>
+    <bom.services-rendering.version>9.1.0-RC22</bom.services-rendering.version>
     <bom.services-connector.version>9.1.0-RC3</bom.services-connector.version>
 
   </properties>
